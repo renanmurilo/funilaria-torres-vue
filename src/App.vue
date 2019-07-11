@@ -1,31 +1,53 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <TheHeader />
+    <transition mode="out-in">
+      <router-view />
+    </transition>
+    <TheFooter />
   </div>
 </template>
 
+<script>
+import TheHeader from "@/components/TheHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
+
+export default {
+  components: {
+    TheHeader,
+    TheFooter
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/* .VueCarousel-navigation-prev,
+.VueCarousel-navigation-next {
+  padding: 0px !important;
+} */
+
+body,
+ul,
+li,
+h1,
+h2,
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 </style>
