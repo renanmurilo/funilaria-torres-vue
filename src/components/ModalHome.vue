@@ -35,14 +35,14 @@ export default {
 
 <style scoped>
 .btn {
-  width: 200px;
+  width: 180px;
   max-width: 100%;
   border: 4px solid #fec63e;
   color: #fec63e;
   border-radius: 0px;
   text-align: center;
   margin: 30px auto;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn:hover {

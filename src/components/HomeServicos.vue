@@ -16,7 +16,7 @@
               </div>
               <div class="row">
                 <div class="col-12">
-                  <img src="https://picsum.photos/1054/350" class="img-fluid" alt />
+                  <img src="https://picsum.photos/1040/350" class="img-fluid" alt />
                 </div>
               </div>
             </slide>
@@ -31,7 +31,7 @@
               </div>
               <div class="row">
                 <div class="col-12">
-                  <img src="https://picsum.photos/1054/350" class="img-fluid" alt />
+                  <img src="https://picsum.photos/1040/350" class="img-fluid" alt />
                 </div>
               </div>
             </slide>
@@ -46,7 +46,7 @@
               </div>
               <div class="row">
                 <div class="col-12">
-                  <img src="https://picsum.photos/1054/350" class="img-fluid" alt />
+                  <img src="https://picsum.photos/1040/350" class="img-fluid" alt />
                 </div>
               </div>
             </slide>

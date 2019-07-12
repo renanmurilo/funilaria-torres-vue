@@ -78,7 +78,16 @@ li {
   transition: all 0.3s ease;
 }
 
-li a. {
+li a {
   color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    margin: 0 auto;
+  }
+  li {
+    padding: 0px;
+  }
 }
 </style>

@@ -59,4 +59,16 @@ h1::after {
   color: #fff;
   font-size: 14px;
 }
+
+@media screen and (max-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+  h1::after {
+    display: none;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+}
 </style>

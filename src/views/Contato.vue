@@ -10,7 +10,15 @@
           <form>
             <div class="form-group">
               <label for="name">Nome:</label>
-              <input type="text" class="form-control" v-model="name" id="nome" />
+              <b-form-input
+                type="text"
+                class="form-control"
+                v-model="name"
+                :state="nameState"
+                aria-describedby="input-live-help input-live-feedback"
+                id="input-live"
+                trim
+              />
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
@@ -32,7 +40,9 @@
             <div class="dados">
               <h3>Dados</h3>
               <p>(11) 4742-6094</p>
-              <p>(11) 97325-8974</p>
+              <a href="https://api.whatsapp.com/send?phone=5511973258974" target="_blank">
+                <img src="../assets/whatsapp.png" alt="whatsapp" /> (11) 97325-8974
+              </a>
               <p>contato@funilariatorres.com.br</p>
             </div>
             <div class="endereco">
@@ -70,6 +80,11 @@ export default {
       telefone: "",
       message: ""
     };
+  },
+  computed: {
+    nameState() {
+      return this.name.length > 2 ? true : false;
+    }
   },
   created() {
     document.title = "Contato";
@@ -144,6 +159,18 @@ form label {
   color: #000000;
   line-height: 13px;
 }
+.informacoes .dados img {
+  margin-right: 5px;
+}
+
+.informacoes .dados a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
+  clear: both;
+}
 
 .informacoes .endereco {
   padding-top: 40px;
@@ -163,5 +190,15 @@ form label {
 
 .container-fluid .row .col-12 {
   padding: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .informacoes {
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .informacoes .dados a {
+    justify-content: center;
+  }
 }
 </style>

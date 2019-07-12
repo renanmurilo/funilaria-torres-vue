@@ -48,8 +48,6 @@
             </b-card>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="texto-btn">
           <p>Clique aqui e veja todas as seguradoras.</p>
           <router-link to="/seguradoras" class="btn">Seguradoras</router-link>
@@ -118,7 +116,11 @@ h2::after {
   justify-content: center;
   text-align: center;
 }
-
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .texto-btn {
   padding: 40px 0px;
 }
