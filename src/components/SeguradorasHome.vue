@@ -3,11 +3,11 @@
     <div class="container">
       <h2>Seguradoras</h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" v-for="(seguras, index) in segura" :key="index">
           <div>
             <b-card
-              title="Porto Seguro"
-              img-src="https://picsum.photos/600/300/?image=25"
+              :title="seguras.titulo"
+              :src="seguras.image"
               img-alt="Image"
               img-top
               tag="article"
@@ -18,11 +18,11 @@
             </b-card>
           </div>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <div>
             <b-card
               title="ALLIANZ"
-              img-src="https://picsum.photos/600/300/?image=25"
+              img-src="seguradoras"
               img-alt="Image"
               img-top
               tag="article"
@@ -47,7 +47,7 @@
               <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
             </b-card>
           </div>
-        </div>
+        </div>-->
         <div class="texto-btn">
           <p>Clique aqui e veja todas as seguradoras.</p>
           <router-link to="/seguradoras" class="btn">Seguradoras</router-link>
@@ -59,7 +59,28 @@
 
 <script>
 export default {
-  name: "SeguradorasHome"
+  name: "SeguradorasHome",
+  data() {
+    return {
+      segura: [
+        {
+          id: 0,
+          title: "Porto Seguro",
+          image: "https://picsum.photos/600/300/?image=25"
+        },
+        {
+          id: 1,
+          title: "Allianz",
+          image: "https://picsum.photos/600/300/?image=25"
+        },
+        {
+          id: 2,
+          title: "Tokio Marine",
+          image: "https://picsum.photos/600/300/?image=25"
+        }
+      ]
+    };
+  }
 };
 </script>
 
