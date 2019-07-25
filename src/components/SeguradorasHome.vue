@@ -4,52 +4,18 @@
       <h2>Seguradoras</h2>
       <div class="row">
         <div class="col-md-4" v-for="(seguras, index) in segura" :key="index">
-          <div>
-            <b-card
-              :title="seguras.titulo"
-              :src="seguras.image"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
-            </b-card>
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" :src="seguras.image" alt="Imagem de capa do card" />
+            <div class="card-body">
+              <h5 class="card-title">{{ seguras.title}}</h5>
+              <p
+                class="card-text"
+              >Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            </div>
           </div>
         </div>
-        <!-- <div class="col-md-4">
-          <div>
-            <b-card
-              title="ALLIANZ"
-              img-src="seguradoras"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
-            </b-card>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <b-card
-              title="Tokio Marine"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
-            </b-card>
-          </div>
-        </div>-->
         <div class="texto-btn">
-          <p>Clique aqui e veja todas as seguradoras.</p>
+          <p>Atendemos a sua seguradora!</p>
           <router-link to="/seguradoras" class="btn">Seguradoras</router-link>
         </div>
       </div>

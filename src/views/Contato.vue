@@ -10,15 +10,7 @@
           <form>
             <div class="form-group">
               <label for="name">Nome:</label>
-              <b-form-input
-                type="text"
-                class="form-control"
-                v-model="name"
-                :state="nameState"
-                aria-describedby="input-live-help input-live-feedback"
-                id="input-live"
-                trim
-              />
+              <input type="name" class="form-control" v-model="nome" id="name" />
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
