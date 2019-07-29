@@ -4,9 +4,9 @@
       <h2>Seguradoras</h2>
       <div class="row">
         <div class="col-md-12">
-          <div v-for="(segura, index) in segurado" :key="index">
+          <div class="card-group" v-for="(segura, index) in segurado" :key="index">
             <b-card
-              v-if="index/2 == 0"
+              v-if="index%2 == 0"
               :img-src="segura.images"
               img-alt="Card image"
               class="mb-3"
@@ -16,7 +16,7 @@
               <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
             </b-card>
             <b-card
-              v-if="index/2 !== 0"
+              v-if="index%2 !== 0"
               :img-src="segura.images"
               img-alt="Card image"
               class="mb-3"
@@ -41,17 +41,22 @@ export default {
         {
           id: 0,
           images: "https://placekitten.com/300/300",
-          title: "Teste"
+          title: "Porto Seguro"
         },
         {
           id: 1,
           images: "https://placekitten.com/300/300",
-          title: "Teste"
+          title: "Allianz"
         },
         {
           id: 2,
           images: "https://placekitten.com/300/300",
-          title: "Teste"
+          title: "Tokio Marine"
+        },
+         {
+          id: 3,
+          images: "https://placekitten.com/300/300",
+          title: "Bradesco"
         }
       ]
     };
@@ -79,5 +84,13 @@ h2::before {
   left: 0;
   width: 50px;
   border: 2px solid #000000;
+}
+.card-group{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.card-title{
+  text-transform: uppercase ;
 }
 </style>
