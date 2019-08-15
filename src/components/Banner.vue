@@ -9,7 +9,8 @@
           <div class="texto-banner">
             <div>"Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <div>Doloremque quaerat sapiente exercitationem tempora"</div>
-            <ModalHome />
+            <!-- <ModalHome /> -->
+            <router-link to="/contato" class="btn">Orçamento</router-link>
           </div>
         </div>
       </div>
@@ -18,13 +19,13 @@
 </template>
 
 <script>
-import ModalHome from "@/components/ModalHome.vue";
+// import ModalHome from "@/components/ModalHome.vue";
 
 export default {
-  name: "Banner",
-  components: {
-    ModalHome
-  }
+  name: "Banner"
+  // components: {
+  //   ModalHome
+  // }
 };
 </script>
 
@@ -58,6 +59,22 @@ h1::after {
   padding-top: 30px;
   color: #fff;
   font-size: 14px;
+}
+.btn {
+  width: 180px;
+  max-width: 100%;
+  border: 4px solid #fec63e;
+  color: #fec63e;
+  border-radius: 0px;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 4px solid #fff;
 }
 
 @media screen and (max-width: 992px) {

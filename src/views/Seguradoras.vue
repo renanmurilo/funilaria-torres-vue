@@ -8,22 +8,22 @@
             <b-card
               v-if="index%2 == 0"
               :img-src="segura.images"
-              img-alt="Card image"
+              :img-alt="segura.titulo"
               class="mb-3"
               img-left
               :title="segura.title"
             >
-              <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
+              <b-card-text>{{segura.text}}</b-card-text>
             </b-card>
             <b-card
               v-if="index%2 !== 0"
               :img-src="segura.images"
-              img-alt="Card image"
+              :img-alt="segura.titulo"
               class="mb-3"
               img-right
               :title="segura.title"
             >
-              <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
+              <b-card-text>{{segura.text}}</b-card-text>
             </b-card>
           </div>
         </div>
@@ -40,20 +40,22 @@ export default {
       segurado: [
         {
           id: 0,
-          images: "https://placekitten.com/300/300",
-          title: "Porto Seguro"
+          images: "./images/porto-seguro.jpg",
+          title: "Porto Seguro",
+          text:
+            "Com o Porto Seguro Auto você tem assistência 24h, serviços para sua casa e vantagens para toda a família. Um seguro completo que vai muito além do veículo. Quem tem Porto Seguro Auto resolve tudo sem sair do sofá."
         },
         {
           id: 1,
-          images: "https://placekitten.com/300/300",
+          images: "./images/allianz.jpg",
           title: "Allianz"
         },
         {
           id: 2,
-          images: "https://placekitten.com/300/300",
+          images: "./images/tokio-marine.png",
           title: "Tokio Marine"
         },
-         {
+        {
           id: 3,
           images: "https://placekitten.com/300/300",
           title: "Bradesco"
@@ -85,12 +87,13 @@ h2::before {
   width: 50px;
   border: 2px solid #000000;
 }
-.card-group{
+
+.card-group {
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-.card-title{
-  text-transform: uppercase ;
+.card-title {
+  text-transform: uppercase;
 }
 </style>

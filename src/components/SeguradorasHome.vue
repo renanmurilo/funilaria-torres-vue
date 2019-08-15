@@ -32,17 +32,17 @@ export default {
         {
           id: 0,
           title: "Porto Seguro",
-          image: "https://picsum.photos/600/300/?image=25"
+          image: "./images/porto-seguro.jpg"
         },
         {
           id: 1,
           title: "Allianz",
-          image: "https://picsum.photos/600/300/?image=25"
+          image: "./images/allianz.jpg"
         },
         {
           id: 2,
           title: "Tokio Marine",
-          image: "https://picsum.photos/600/300/?image=25"
+          image: "./images/tokio-marine.png"
         }
       ]
     };
@@ -77,6 +77,11 @@ h2::after {
 .card {
   border-radius: 0px;
   border: 0px solid #000000;
+  align-items: center;
+}
+.card img {
+  width: 60%;
+  text-align: center;
 }
 
 .card-body {

@@ -53,7 +53,7 @@ li {
   font-size: 28px;
   line-height: 24px;
   font-weight: bold;
-  border: 5px solid #000000;
+  /* border: 5px solid #000000; */
   padding: 4px;
 }
 
