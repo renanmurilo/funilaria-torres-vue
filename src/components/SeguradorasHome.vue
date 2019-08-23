@@ -136,4 +136,10 @@ h2::after {
   color: #fff;
   border: 4px solid #fff;
 }
+
+@media screen and (max-width: 992px) {
+  .card {
+    margin-top: 50px;
+  }
+}
 </style>

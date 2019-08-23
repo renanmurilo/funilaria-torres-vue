@@ -48,17 +48,23 @@ export default {
         {
           id: 1,
           images: "./images/allianz.jpg",
-          title: "Allianz"
+          title: "Allianz",
+          text:
+            "A Allianz oferece uma vasta solução de seguros e de gestão de ativos, com produtos e serviços que respondem à necessidade de mais de 85 milhões de Clientes em mais de 70 países."
         },
         {
           id: 2,
           images: "./images/tokio-marine.png",
-          title: "Tokio Marine"
+          title: "Tokio Marine",
+          text:
+            "A Tokio Marine é uma Seguradora nascida no Japão e criada no Brasil. Isto significa que aliamos à solidez e aos valores de um dos mais antigos grupos seguradores do mundo, a tranquilidade e personalização do atendimento brasileiro."
         },
         {
           id: 3,
-          images: "https://placekitten.com/300/300",
-          title: "Bradesco"
+          images: "./images/bradesco.png",
+          title: "Bradesco",
+          text:
+            "Líder de mercado no Brasil e na América Latina, trabalhamos para oferecer o melhor atendimento a você, nosso segurado. "
         }
       ]
     };
@@ -74,7 +80,7 @@ h2 {
   position: relative;
   font-size: 36px;
   color: #000000;
-  margin-top: 25px;
+  margin-top: 45px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -95,5 +101,17 @@ h2::before {
 
 .card-title {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .flex-row,
+  .flex-row-reverse {
+    flex-direction: column !important;
+  }
+
+  .card img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 </style>

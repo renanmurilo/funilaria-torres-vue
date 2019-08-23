@@ -164,11 +164,19 @@ form label {
   clear: both;
 }
 
+.informacoes .dados p {
+  margin-bottom: 10px;
+}
+
 .informacoes .endereco {
-  padding-top: 40px;
+  padding-top: 20px;
   line-height: 12px;
   font-size: 18px;
   color: #000000;
+}
+
+.informacoes .endereco p {
+  line-height: 150%;
 }
 
 .container-fluid {

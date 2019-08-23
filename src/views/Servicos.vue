@@ -101,9 +101,19 @@ export default {
           img: "https://picsum.photos/400/400",
           titulo: "Polimento e cristalização",
           fotos: [
-            "https://picsum.photos/1040/500",
-            "https://picsum.photos/1040/500",
-            "https://picsum.photos/1040/500"
+            "https://picsum.photos/1040/600",
+            "https://picsum.photos/1040/600",
+            "https://picsum.photos/1040/600"
+          ]
+        },
+        {
+          id: 5,
+          img: "https://picsum.photos/400/400",
+          titulo: "Reparos em Fibras",
+          fotos: [
+            "https://picsum.photos/1040/600",
+            "https://picsum.photos/1040/600",
+            "https://picsum.photos/1040/600"
           ]
         }
       ]
